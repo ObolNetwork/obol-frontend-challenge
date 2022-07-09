@@ -16,7 +16,7 @@ Use: https://restcountries.com/v2/name/{name}  ({name being the country name}) f
 Use: https://restcountries.eu/rest/v2/all to get all the countries
 
 ## Extra
-- What does code quality look like to you? Show us with your code! If you have an eye for design, impress us with your CSS powers!
+- What does code quality look like to you? Show us with your code! If you have an eye for design, impress us with your CSS powers! and tools to request data like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
 
 # Getting Started with Create Next App
 
@@ -52,4 +52,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 2. [Stitches.dev](https://stiches.dev) for the styling
 3. [Atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/)
 3. Upload this to netlify site
+
+# Optional but cool stuff that you can use
+1. State manager like Zustand or recoil
+2. NextJS layouts
 
