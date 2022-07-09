@@ -44,7 +44,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
-## important thing to use
+# Important things to use
 
 1. Typescript
 2. [Stitches.dev](https://stiches.dev) for the styling
