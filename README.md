@@ -27,6 +27,8 @@ This project needs to be bootstrapped with [Create NextJs App](https://nextjs.or
 2. If you don't have node installed download it here: https://nodejs.org/en/
 3. Go to the root directory of the repository in your command line boostrap the project with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app).
 4. Run npm start, and it should load a basic rendered page in your default browser
+5. Do periodically commits and use `feature/` branches for commits, please read git flow -> https://nvie.com/posts/a-successful-git-branching-model/
+6. Once you finish, made a PR to main branch on this repo.
 5. You're ready to code!
 
 # Steps
