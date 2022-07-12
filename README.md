@@ -11,6 +11,9 @@ Given a data API located here: [Pokemon API](https://pokeapi.co/docs/v2#pokemon)
 
 https://www.figma.com/file/iXKExkvVS8K9Vc13mz3jxk/Deep-Work-x-Obol?node-id=3495%3A7764 
 
+![image](https://user-images.githubusercontent.com/5679878/178573911-2ef475d4-f93b-481f-8475-c4693fdf119e.png)
+
+
 ## Requirements
 - displays a list of the of Pokemon using component driven development pattern
 - allows you to click on details to open a new tab with wiki data (see instrunction on figma file).
