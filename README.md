@@ -2,7 +2,7 @@
 This is a home assesment for frontend candidates
 
 ## Intro
-The Obol's principal mission is to catch them all the validators! 😆 so in to achieve that we need to see your CSS skills to create wondeful components
+The Obol main's mission is to catch them all! the validators of course 😆 so in matter to achieve that, we need to see your CSS skills to create wonderful components
 
 ## Assignment
 Given a data API located here: [Pokemon API](https://pokeapi.co/docs/v2#pokemon).
