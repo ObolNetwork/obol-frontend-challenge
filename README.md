@@ -20,10 +20,10 @@ https://www.figma.com/file/iXKExkvVS8K9Vc13mz3jxk/Deep-Work-x-Obol?node-id=3495%
 - Search by id or name, the search needs to be triggered by the search button
 
 ## Api endpoints
-https://pokeapi.co/api/v2/pokemon?limit=151 to get all the pokemon with a limit
-https://pokeapi.co/api/v2/pokemon/{id-or-name}/ for searching the pokemon
-https://img.pokemondb.net/artwork/large/{name}.jpg for get the image
-https://bulbapedia.bulbagarden.net/wiki/{name} link to wiki
+- https://pokeapi.co/api/v2/pokemon?limit=151 to get all the pokemon with a limit
+- https://pokeapi.co/api/v2/pokemon/{id-or-name}/ for searching the pokemon
+- https://img.pokemondb.net/artwork/large/{name}.jpg for get the image
+- https://bulbapedia.bulbagarden.net/wiki/{name} link to wiki
 
 ## Extra
 - Use a facny data fetching toold like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
@@ -62,8 +62,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 4. [Atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/)
 5. Upload this to netlify site
 
-# Optional but cool stuff that you can use
-1. State manager like Zustand or recoil
-2. NextJS layouts
-
-
+# Optional but cool stuff that you can use.
+1. State manager like [zustand](https://github.com/pmndrs/zustand) or [recoil](https://recoiljs.org/).
+2. NextJS layouts.
