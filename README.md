@@ -26,7 +26,7 @@ https://www.figma.com/file/iXKExkvVS8K9Vc13mz3jxk/Deep-Work-x-Obol?node-id=3495%
 - https://bulbapedia.bulbagarden.net/wiki/{name} link to wiki
 
 ## Extra
-- Use a facny data fetching toold like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
+- Use a fancy data fetching tool like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
 
 # Getting Started with Create Next App
 
@@ -35,13 +35,13 @@ This project needs to be bootstrapped with [Create NextJs App](https://nextjs.or
 ## Steps:
 1. Clone this repository 
 2. If you don't have node installed download it here: https://nodejs.org/en/
-3. Boostrap the project with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app).
-4. Run npm start, and it should load a basic rendered page in your default browser
+3. Boostrap the project with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app), use yarn.
+4. Run yarn start, and it should load a basic rendered page in your default browser
 5. Do periodically commits and use `feature/` branches for commits, please read git flow -> https://nvie.com/posts/a-successful-git-branching-model/
 6. Once you finish, made a PR to main branch on this repo.
 5. You're ready to code!
 
-### `nvm use`
+### `nvm use` (to use this myou need to add .nvmrc file)
 ### `yarn && yarn dev`
 
 ## Available Scripts
