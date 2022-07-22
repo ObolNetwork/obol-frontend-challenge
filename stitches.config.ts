@@ -318,6 +318,7 @@ export const {
 export const globalStyles = globalCss({
   body:{
     backgroundColor:"#091011",
+    margin:0,
   },
   "input, textarea": {
     appearance: "none",

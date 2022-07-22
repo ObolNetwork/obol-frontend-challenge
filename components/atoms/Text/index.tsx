@@ -20,6 +20,9 @@ export const Text = styled("p", {
       light: {
         color: "$light",
       },
+      lightGrey: {
+        color: "#475E64",
+      },
     },
     space: {
       fit: {
