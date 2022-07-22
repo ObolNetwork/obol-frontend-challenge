@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { fetchURL } from "@utils/helpers";
 import { Searchbar } from "@components/molecules/Searchbar";
 import { Div } from "@components/atoms/Div";
-import { Pokemon } from "./pokemon";
+import Pokemon from "./pokemon";
 //import { pokemonDataInterface } from "@lib/interfaces";
 
 interface pokemonDataInterface {
@@ -19,7 +19,7 @@ async function fetchPokemons({
   return fetchURL(pageParam);
 }
 
-export const Pokemons: React.FC = (): JSX.Element => {
+const Pokemons: React.FC = (): JSX.Element => {
   const [searchingInput, setSearchingInput] = useState(""); //this state should be managed
   const [clickFlag, setClickFlag] = useState(false); //this state should be managed
   const [searchFilterg, setSearchFilterg] = useState(""); //this state should be managed
@@ -68,3 +68,4 @@ export const Pokemons: React.FC = (): JSX.Element => {
     </Div>
   );
 };
+export default Pokemons;

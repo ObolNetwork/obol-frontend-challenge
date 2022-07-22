@@ -20,7 +20,7 @@ interface abilityDesc {
   slot: number;
 }
 
-export const Pokemon: React.FC<Props> = ({ url }): JSX.Element => {
+const Pokemon: React.FC<Props> = ({ url }): JSX.Element => {
   const { data } = useQuery(["pokemons", url], () => fetchURL(url));
 
   console.log(data, "data");
@@ -61,3 +61,5 @@ export const Pokemon: React.FC<Props> = ({ url }): JSX.Element => {
     </Div>
   );
 };
+
+export default Pokemon;
