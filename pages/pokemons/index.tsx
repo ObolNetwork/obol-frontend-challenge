@@ -3,17 +3,23 @@ import InfiniteScroll from "react-infinite-scroller";
 import { useEffect, useState } from "react";
 import { fetchURL } from "@utils/helpers";
 import { Searchbar } from "@components/molecules/Searchbar";
+import { Div } from "@components/atoms/Div";
 import { Pokemon } from "./pokemon";
-import { pokemonDataInterface } from "@lib/interfaces";
+//import { pokemonDataInterface } from "@lib/interfaces";
+
+interface pokemonDataInterface {
+  name: string;
+  url: string;
+}
 
 async function fetchPokemons({
-  pageParam = `https://pokeapi.co/api/v2/pokemon?limit=20
+  pageParam = `https://pokeapi.co/api/v2/pokemon?limit=50
   `,
 }) {
   return fetchURL(pageParam);
 }
 
-export default function Pokemons() {
+export const Pokemons: React.FC = (): JSX.Element => {
   const [searchingInput, setSearchingInput] = useState(""); //this state should be managed
   const [clickFlag, setClickFlag] = useState(false); //this state should be managed
   const [searchFilterg, setSearchFilterg] = useState(""); //this state should be managed
@@ -36,27 +42,29 @@ export default function Pokemons() {
     });
 
   return (
-    <>
+    <Div space="press">
       <Searchbar
         searchingInput={searchingInput}
         setSearching={setSearchingInput}
         onSearch={onSearch}
-      />
+      />{" "}
       {clickFlag ? (
-        <Pokemon url={`https://pokeapi.co/api/v2/pokemon/${searchFilterg}`} />
+        <Div display="grid">
+          <Pokemon url={`https://pokeapi.co/api/v2/pokemon/${searchFilterg}`} />
+        </Div>
       ) : (
         <InfiniteScroll hasMore={hasNextPage} loadMore={() => fetchNextPage()}>
-          <ol>
-            {data?.pages.map((page, index) =>
+          <Div display="grid">
+            {data?.pages.map((page) =>
               page.results.map((pokemonData: pokemonDataInterface) => {
                 const { url, name } = pokemonData;
 
                 return <Pokemon key={name} url={url} />;
               })
             )}
-          </ol>
+          </Div>
         </InfiniteScroll>
       )}
-    </>
+    </Div>
   );
-}
+};

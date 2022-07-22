@@ -1,10 +1,28 @@
-type Props = {
-  setSearching: (param: string) => void;
-};
-export const Input: React.FC<Props> = ({ setSearching }) => {
-  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearching(e.target.value);
-  };
+import { styled } from "../../../stitches.config";
 
-  return <input onChange={onChange} />;
-};
+export const Input = styled("input", {
+  // base styles
+  height: "$md",
+  width: "50vw",
+  variants: {
+    color: {
+      grey: {
+        bc: "$bg02",
+        border: "$2 solid $bg04",
+        color: "$menu",
+      },
+    },
+    space: {
+      fit: {
+        br: "$1",
+        pl: "$xxs",
+      },
+    },
+    font: {
+      smallFont: {
+        fontSize: "$5",
+        lh: "$shorter",
+      },
+    },
+  },
+});
