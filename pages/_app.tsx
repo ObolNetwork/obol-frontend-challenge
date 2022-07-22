@@ -2,8 +2,12 @@ import { FC, useState } from "react";
 import type { AppProps } from "next/app";
 import { QueryClient, QueryClientProvider } from "react-query";
 //import Layout from '@components/Layout';
+import { globalStyles } from "../stitches.config";
 
-const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
+const MyApp: FC<AppProps> = ({
+  Component,
+  pageProps,
+}: AppProps): JSX.Element => {
   const [queryClient] = useState(
     () =>
       new QueryClient({
@@ -14,7 +18,7 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         },
       })
   );
-
+  globalStyles();
   return (
     <QueryClientProvider client={queryClient}>
       <Component {...pageProps} />
