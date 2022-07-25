@@ -1,67 +1,34 @@
-# Obol Frontend Challenge
-This is a home assesment for frontend candidates
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Intro
-The Obol main's mission is to catch them all! the validators of course 😆 so in matter to achieve that, we need to see your CSS skills to create wonderful components
+## Getting Started
 
-## Assignment
-Given a data API located here: [Pokemon API](https://pokeapi.co/docs/v2#pokemon).
+First, run the development server:
 
-## Figma File 
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-https://www.figma.com/file/iXKExkvVS8K9Vc13mz3jxk/Deep-Work-x-Obol?node-id=3495%3A7764 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-![image](https://user-images.githubusercontent.com/5679878/178573911-2ef475d4-f93b-481f-8475-c4693fdf119e.png)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-## Requirements
-- displays a list of the of Pokemon using component driven development pattern
-- allows you to click on details to open a new tab with wiki data (see instrunction on figma file).
-- Search by id or name, the search needs to be triggered by the search button
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Api endpoints
-- https://pokeapi.co/api/v2/pokemon?limit=151 to get all the pokemon with a limit
-- https://pokeapi.co/api/v2/pokemon/{id-or-name}/ for searching the pokemon
-- https://img.pokemondb.net/artwork/large/{name}.jpg for get the image
-- https://bulbapedia.bulbagarden.net/wiki/{name} link to wiki
+## Learn More
 
-## Extra
-- Use a fancy data fetching tool like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
+To learn more about Next.js, take a look at the following resources:
 
-# Getting Started with Create Next App
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-This project needs to be bootstrapped with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Steps:
-1. Clone this repository 
-2. If you don't have node installed download it here: https://nodejs.org/en/
-3. Boostrap the project with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app), use yarn.
-4. Run yarn start, and it should load a basic rendered page in your default browser
-5. Do periodically commits and use `feature/` branches for commits, please read git flow -> https://nvie.com/posts/a-successful-git-branching-model/
-6. Once you finish, made a PR to main branch on this repo.
-5. You're ready to code!
+## Deploy on Vercel
 
-### `nvm use` (to use this myou need to add .nvmrc file)
-### `yarn && yarn dev`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start` when project is build
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-# Important things to use
-
-1. Typescript
-2. React Hooks
-3. [Stitches.dev](https://stiches.dev) for the styling
-4. [Atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/)
-5. Upload this to netlify site
-
-# Optional but cool stuff that you can use.
-1. State manager like [zustand](https://github.com/pmndrs/zustand) or [recoil](https://recoiljs.org/).
-2. NextJS layouts.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
