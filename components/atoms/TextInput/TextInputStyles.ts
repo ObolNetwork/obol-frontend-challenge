@@ -1,6 +1,4 @@
-import { styled } from '../../styles/theme';
-
-const TextInput = styled('input', {
+const TextInputStyles = {
     background: '$background2',
     color: '$textLight',
     boxSizing: 'border-box',
@@ -16,8 +14,9 @@ const TextInput = styled('input', {
     flexGrow: 0,
     width: '635px',
     height: '48px',
-});
+    '&:focus': {
+        outline: 'none',
+    },
+};
 
-export default function TestInput() {
-    return <TextInput type="text" name="name"></TextInput>;
-}
+export default TextInputStyles;

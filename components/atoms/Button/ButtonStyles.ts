@@ -1,6 +1,4 @@
-import { styled } from '../../styles/theme';
-
-const StyledButton = styled('button', {
+const ButtonStyles = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
@@ -29,6 +27,6 @@ const StyledButton = styled('button', {
             },
         },
     },
-});
+};
 
-export default StyledButton;
+export default ButtonStyles;
