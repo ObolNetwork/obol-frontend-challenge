@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Layout from '../components/atoms/Layout';
-import Card from '../components/atoms/Card';
 import PokemonCard from '../components/molecules/PokemonCard';
 
 const Home: NextPage = () => {
