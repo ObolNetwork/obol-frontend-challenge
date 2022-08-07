@@ -22,6 +22,7 @@ const ButtonStyles = {
     variants: {
         color: {
             primary: {
+                borderWidth: 0,
                 background: '$primary',
                 color: '$textDark',
                 '&:hover': {
