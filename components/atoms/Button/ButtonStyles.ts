@@ -1,3 +1,9 @@
+const DisabledStyles = {
+    backgroundColor: '$background1',
+    color: '$background4',
+    border: '2px solid $background4',
+};
+
 const ButtonStyles = {
     display: 'flex',
     flexDirection: 'row',
@@ -9,24 +15,24 @@ const ButtonStyles = {
     backdropFilter: 'blur(4px)',
     width: '101px',
     height: '48px',
+    fontSize: '$1',
     fontWeight: '$2',
-    lineHeight: '24px',
+    lineHeight: '25px',
+    top: '12px',
     variants: {
         color: {
             primary: {
                 background: '$primary',
-                borderWidth: 0,
                 color: '$textDark',
                 '&:hover': {
                     backgroundColor: '$secondary',
                     color: '$textBlue',
                 },
             },
-            disabled: {
-                color: '$background4',
-            },
+            disabled: DisabledStyles,
         },
     },
+    '&[disabled]': DisabledStyles,
 };
 
 export default ButtonStyles;
