@@ -10,7 +10,7 @@ Enhance the Pokemon application to integrate Web3 functionalities. Users should 
 
 ## Design Reference
 
-Refer to our updated Figma file for design guidelines: [Figma File]([https://www.figma.com/file/iXKExkvVS8K9Vc13mz3jxk/Deep-Work-x-Obol?node-id=3495%3A7764](https://www.figma.com/file/lUoH5dEVFi8NgbptXNsJUI/Obol-Design-Files-(Copy)?type=design&node-id=3495-7764&mode=design)
+Refer to our updated Figma file for design guidelines: [Figma File](https://www.figma.com/file/lUoH5dEVFi8NgbptXNsJUI/Obol-Design-Files-(Copy)?type=design&node-id=3495-7764&mode=design)
 
 ## Key Features and Technical Requirements
 
