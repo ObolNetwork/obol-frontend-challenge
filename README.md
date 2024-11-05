@@ -60,6 +60,8 @@ Deploy this using something like vercel or similar, and share the deployed link 
 
 ## Bonus
 
+Implement infinite scrolling or pagination to load additional data when reaching the bottom of the page or navigating between pages.
+
 Create a basic user authorization layer that allows authenticated users to access a dedicated page. You can implement authentication using JWT and SIWE, also you can utilise @rainbow-me/rainbowkit-siwe-next-auth. 
 
 Support multiple wallets, like WalletConnect, in addition to MetaMask.
