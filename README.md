@@ -18,7 +18,7 @@ Refer to our updated Figma file for design guidelines: [Figma File](https://www.
 - **Ethereum Transaction Signing:** Allow users to "Collect" a Pokemon by initiating and signing a simple Ethereum transaction.
 - **Server-Side Rendering (SSR):** Continue using SSR for enhanced performance and SEO.
 - **Tooltip with Web Scraping:** Display basic Pokemon info in a tooltip using server-side web scraping (e.g., with Cheerio).
-- **Tailwind CSS and Atomic Design:** Use Tailwind CSS for styling and follow the Atomic Design methodology for component development.
+- **Atomic Design:** Choose your preferred CSS technology (e.g., Tailwind CSS) and follow the Atomic Design methodology for component development.
 - **Use of React Hooks and Custom Hooks:** Emphasize the use of React Hooks for state and lifecycle management, particularly in managing Web3 interactions.
 - **API Integration and Web3 Integration:** Use the provided Pokemon API and integrate Web3 functionalities for blockchain interactions.
 - **Deployment:** Deploy the application ensuring that both SSR and Web3 functionalities work seamlessly in the production environment.
