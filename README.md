@@ -33,7 +33,6 @@ Refer to our updated Figma file for design guidelines: [Figma File](https://www.
 
 1. Ensure Node.js is installed.
 2. Initialize the project using Create Next.js App with Yarn.
-3. Implement features following the Git Flow model.
 👀
 ### Development Commands
 
