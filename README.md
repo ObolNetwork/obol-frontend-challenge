@@ -67,7 +67,7 @@ Support multiple wallets, like WalletConnect, in addition to MetaMask.
 
 ## Note
 
-Since PRs to this repo are not required, cretae your repo as private and add us (HananINouman, agaskrobot) as collaborators to review it.
+Since PRs to this repo are not required, create your repo as private and add us (HananINouman, agaskrobot, LukeHackett12) as collaborators to review it.
 
 
 
