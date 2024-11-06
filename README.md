@@ -1,67 +1,73 @@
-# Obol Frontend Challenge
-This is a home assesment for frontend candidates
+# Obol DApp Challenge
+
+Welcome to Obol's frontend and Web3 developer challenge, focusing on modern web technologies and blockchain interactions.
 
 ## Intro
-The Obol main's mission is to catch them all! the validators of course 😆 so in matter to achieve that, we need to see your CSS skills to create wonderful components
+Obol’s mission extends into Web3! We aim to not only list and preview Pokemon but also enable users to interact with them through Ethereum blockchain technology.
 
 ## Assignment
-Given a data API located here: [Pokemon API](https://pokeapi.co/docs/v2#pokemon).
+Enhance the Pokemon application to integrate Web3 functionalities. Users should be able to connect their MetaMask wallet and "Collect" a Pokemon by signing a simple Ethereum transaction.
 
-## Figma File 
+## Design Reference
 
-https://www.figma.com/file/iXKExkvVS8K9Vc13mz3jxk/Deep-Work-x-Obol?node-id=3495%3A7764 
+Refer to our updated Figma file for design guidelines: [Figma File](https://www.figma.com/file/lUoH5dEVFi8NgbptXNsJUI/Obol-Design-Files-(Copy)?type=design&node-id=3495-7764&mode=design)
 
-![image](https://user-images.githubusercontent.com/5679878/178573911-2ef475d4-f93b-481f-8475-c4693fdf119e.png)
+## Key Features and Technical Requirements
+
+- **MetaMask Wallet Connection:** Implement functionality to connect to a user's MetaMask wallet using libraries like RainbowKit and wagmi.
+- **Ethereum Transaction Signing:** Allow users to "Collect" a Pokemon by initiating and signing a simple Ethereum transaction.
+- **Server-Side Rendering (SSR):** Continue using SSR for enhanced performance and SEO.
+- **Tooltip with Web Scraping:** Display basic Pokemon info in a tooltip using server-side web scraping (e.g., with Cheerio).
+- **Atomic Design:** Choose your preferred CSS technology (e.g., Tailwind CSS) and follow the Atomic Design methodology for component development.
+- **Use of React Hooks and Custom Hooks:** Emphasize the use of React Hooks for state and lifecycle management, particularly in managing Web3 interactions.
+- **API Integration and Web3 Integration:** Use the provided Pokemon API and integrate Web3 functionalities for blockchain interactions.
+- **Deployment:** Deploy the application ensuring that both SSR and Web3 functionalities work seamlessly in the production environment.
+
+## API and Blockchain Endpoints
+
+- Pokemon List: `https://pokeapi.co/api/v2/pokemon?limit=151`
+- Individual Pokemon Data: `https://pokeapi.co/api/v2/pokemon/{id-or-name}/`
+- Bulbapedia Link: `https://bulbapedia.bulbagarden.net/wiki/{name}`
+
+## Getting Started
+
+1. Ensure Node.js is installed.
+2. Initialize the project using Create Next.js App with Yarn.
+👀
+### Development Commands
+
+- `nvm use`
+- `yarn && yarn dev` (for development)
+- `yarn start` (for production)
+
+## Evaluation Criteria
+
+- Successful integration of Web3 functionalities.
+- Clean and efficient implementation of SSR, data state, and web scraping.
+- Quality and organization of code, following best practices.
+- Effective use of React Hooks and custom hooks.
+- Styling accuracy, responsiveness, and adherence to design patterns.
+- Documentation and ease of understanding.
+
+Use TS please 👀
+
+This challenge is your opportunity to showcase your skills in both advanced frontend development and  Web3 interactions. We are excited to see how you creatively integrate these technologies!
+
+## deploy
+
+Deploy this using something like vercel or similar, and share the deployed link in your PR description.
+
+## Bonus
+
+Implement infinite scrolling or pagination to load additional data when reaching the bottom of the page or navigating between pages.
+
+Create a basic user authorization layer that allows authenticated users to access a dedicated page. You can implement authentication using JWT and SIWE, also you can utilise @rainbow-me/rainbowkit-siwe-next-auth. 
+
+Support multiple wallets, like WalletConnect, in addition to MetaMask.
+
+## Note
+
+Since PRs to this repo are not required, create your repo as private and add us (HananINouman, agaskrobot, LukeHackett12) as collaborators to review it.
 
 
-## Requirements
-- displays a list of the of Pokemon using component driven development pattern
-- allows you to click on details to open a new tab with wiki data (see instrunction on figma file).
-- Search by id or name, the search needs to be triggered by the search button
 
-## Api endpoints
-- https://pokeapi.co/api/v2/pokemon?limit=151 to get all the pokemon with a limit
-- https://pokeapi.co/api/v2/pokemon/{id-or-name}/ for searching the pokemon
-- https://img.pokemondb.net/artwork/large/{name}.jpg for get the image
-- https://bulbapedia.bulbagarden.net/wiki/{name} link to wiki
-
-## Extra
-- Use a fancy data fetching tool like [SWR](https://swr.vercel.app/) or [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
-
-# Getting Started with Create Next App
-
-This project needs to be bootstrapped with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app).
-
-## Steps:
-1. Clone this repository 
-2. If you don't have node installed download it here: https://nodejs.org/en/
-3. Boostrap the project with [Create NextJs App](https://nextjs.org/docs/api-reference/create-next-app), use yarn.
-4. Run yarn start, and it should load a basic rendered page in your default browser
-5. Do periodically commits and use `feature/` branches for commits, please read git flow -> https://nvie.com/posts/a-successful-git-branching-model/
-6. Once you finish, made a PR to main branch on this repo.
-5. You're ready to code!
-
-### `nvm use` (to use this myou need to add .nvmrc file)
-### `yarn && yarn dev`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start` when project is build
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-# Important things to use
-
-1. Typescript
-2. React Hooks
-3. [Stitches.dev](https://stiches.dev) for the styling
-4. [Atomic design pattern](https://atomicdesign.bradfrost.com/chapter-2/)
-5. Upload this to netlify site
-
-# Optional but cool stuff that you can use.
-1. State manager like [zustand](https://github.com/pmndrs/zustand) or [recoil](https://recoiljs.org/).
-2. NextJS layouts.
